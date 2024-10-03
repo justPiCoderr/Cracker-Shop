@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Diwali Crackers Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="productStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/order.html">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products-list">
+            <div class="product">
+                <img src="images/sparkler.jpg" alt="Sparkler">
+                <h3>Sparkler</h3>
+                <p>Price: $5</p>
+                <button onclick="addToCart('Sparkler')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/flowerpot.jpg" alt="Flowerpot">
+                <h3>Flowerpot</h3>
+                <p>Price: $10</p>
+                <button onclick="addToCart('Flowerpot')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/chakra.jpg" alt="Chakra">
+                <h3>Chakra</h3>
+                <p>Price: $8</p>
+                <button onclick="addToCart('Chakra')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p id="popup-message"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Diwali Crackers Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
